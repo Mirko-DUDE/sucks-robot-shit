@@ -1,0 +1,138 @@
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Makro';
+  src: url('/fonts/MakroXM-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  font-weight: normal;
+  font-style: normal;
+  background-color: #ececec;
+}
+
+html {
+  @apply h-screen text-white bg-black;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-src] {
+  opacity: 0;
+}
+
+picture.lazyLoad {
+  img {
+    opacity: 0;
+    transition: opacity .7s ease;
+  }
+
+  &.isLoaded {
+    img {
+      opacity: 1
+    }
+  }
+}
+
+.bg-transparent {
+  background-color: transparent;
+}

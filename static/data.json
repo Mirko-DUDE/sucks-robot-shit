@@ -1,0 +1,72 @@
+{
+  "event": {
+    "address": "Via G. De Castillia 26, Milano",
+    "when": "June 6-12//Stecca 3//",
+    "where": "Isola Design District"
+  },
+  "hero": {
+    "image": "/images/hero.jpg",
+    "title": "Exhibit in"
+  },
+  "section1": {
+    "image": {
+      "url": "",
+      "description": "We are more and more <strong>careful to reduce waste</strong>, and the world of design is no exception."
+    },
+    "title": "When you <strong>design</strong> something you also produce <strong>waste</strong>"
+  },
+  "section2": {
+    "title": {
+      "el1": "Have you ever heard about",
+      "el2": "Robot<br>Shit?"
+    },
+    "description": "Robot Shit is the waste that comes from 3D printed products."
+  },
+  "section3": {
+    "image": {
+      "url": ""
+    },
+    "title": {
+      "el1": "This is",
+      "el2": "The shape",
+      "el3": "of the waste",
+      "el4": "of the future"
+    },
+    "description": "But there is a small problem though: it is very difficult to reuse."
+  },
+  "sectionHorizontal": {
+    "1": {
+      "title": "Nobody knows it, but there is always more of it."
+    },
+    "2": {
+      "entry": "_sucks., in collaboration with Caracol and DesignWanted",
+      "title": "want to take this Shit and turn it into something new"
+    },
+    "3": {
+      "title": "How about turning the <strong>Robot Shit</strong> into <strong>Design</strong>",
+      "description": "Did you produce these scraps? Good. Let's find a way to reuse them, to make them useful."
+    },
+    "4": {
+      "title": "With designers able to help us turing Robot Shit into Design Shit.",
+      "description": "This is why we have selected some design studios for this project",
+      "slides": [
+        {
+          "title": "lorem ipsum",
+          "description": "dolor sit amet"
+        },
+        {
+          "title": "lorem ipsum",
+          "description": "design studio"
+        },
+        {
+          "title": "lorem ipsum",
+          "description": "design studio"
+        },
+        {
+          "title": "lorem ipsum",
+          "description": "design studio"
+        }
+      ]
+    }
+  }
+}
