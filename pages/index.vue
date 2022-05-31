@@ -2,7 +2,7 @@
   <div class="text-black bg-white site-container">
     <Header/>
     <main class="relative min-h-full home">
-      <section class="relative flex flex-col justify-end w-full h-screen overflow-hidden hero">
+      <section class="relative flex flex-col justify-end w-full h-screen overflow-hidden text-white hero">
         <img class="absolute top-0 left-0 w-full h-full object-cover object-center"
              v-if="data.hero.image"
              :src="data.hero.image"
