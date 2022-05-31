@@ -10,7 +10,7 @@
   },
   "section1": {
     "image": {
-      "url": "",
+      "url": "/images/hero.jpg",
       "description": "We are more and more <strong>careful to reduce waste</strong>, and the world of design is no exception."
     },
     "title": "When you <strong>design</strong> something you also produce <strong>waste</strong>"
@@ -24,7 +24,7 @@
   },
   "section3": {
     "image": {
-      "url": ""
+      "url": "/images/hero.jpg"
     },
     "title": {
       "el1": "This is",
