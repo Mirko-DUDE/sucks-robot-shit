@@ -26,7 +26,7 @@
             <p class="mt-4 font-secondary" v-html="data.section1.image.description"/>
           </div>
 
-          <div class="absolute text-right overlay-text">
+          <div class="absolute top-0 mt-8 text-right overlay-text">
             <h2 class="text-50 leading-64 font-bold uppercase outlined" v-html="data.section1.title"/>
           </div>
         </div>
