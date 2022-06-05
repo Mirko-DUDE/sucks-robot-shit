@@ -25,7 +25,6 @@ export default {
       {name: 'theme-color', content: '#000000'}
     ],
     link: [
-      {rel: 'stylesheet', href: 'https://use.typekit.net/eku4zjj.css'},
       {rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico'},
       {rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-touch-icon.png'},
       {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icons/favicon-32x32.png'},

@@ -20,11 +20,11 @@
       "el1": "Have you ever heard about",
       "el2": "Robot<br>Shit?"
     },
-    "description": "Robot Shit is the waste that comes from 3D printed products."
+    "description": "<strong>Robot Shit</strong> is the waste <br>that comes from 3D printed products."
   },
   "section3": {
     "image": {
-      "url": "/images/hero.jpg"
+      "url": "/images/shape.jpg"
     },
     "title": {
       "el1": "This is",
@@ -32,7 +32,7 @@
       "el3": "of the waste",
       "el4": "of the future"
     },
-    "description": "But there is a small problem though: it is very difficult to reuse."
+    "description": "But there is a small problem though:<br>it is very difficult to reuse."
   },
   "sectionHorizontal": {
     "1": {
