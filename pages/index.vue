@@ -178,7 +178,7 @@
               <h3 class="text-50 leading-64 font-bold uppercase"
                   v-text="data.form.title"></h3>
 
-              <input class="mt-8 mb-4 border border-black font-secondary text-white rounded-full py-3 px-4 text-center"
+              <input class="mt-8 mb-4 border border-black font-secondary text-black rounded-full py-3 px-4 text-center"
                      type="email"
                      required
                      :placeholder="data.form.emailPlaceholder"/>
