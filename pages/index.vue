@@ -74,7 +74,7 @@
       </section>
 
       <section class="section-line section-horizontal section-h-fixed">
-        <div class="flex items-center w-screen h-full text-center">
+        <div class="flex items-center w-screen h-full text-center section-horizontal__el">
           <div class="grid grid-cols-12 w-full">
             <div class="col-span-10 col-start-2 lg:col-span-4 lg:col-start-5">
               <h2 class="text-50 leading-64 font-bold uppercase"
@@ -83,7 +83,7 @@
           </div>
         </div>
 
-        <div class="w-screen h-full bg-black text-white">
+        <div class="w-screen h-full bg-black text-white section-horizontal__el">
           <div class="grid grid-cols-12 w-full h-full">
             <div class="col-span-12 lg:col-span-5 lg:col-start-2">
               <p class="font-secondary" v-html="data.sectionHorizontal['2'].entry"/>
@@ -102,7 +102,7 @@
           </div>
         </div>
 
-        <div class="w-screen h-full">
+        <div class="w-screen h-full section-horizontal__el">
           <div class="grid grid-cols-12 w-full h-full">
             <div class="col-span-12 lg:col-span-5 lg:col-start-2">
               <h2 class="text-50 leading-64 font-bold uppercase outlined" v-html="data.sectionHorizontal['3'].title"/>
@@ -116,15 +116,45 @@
           </div>
         </div>
 
-        <div class="w-screen h-full bg-black text-white">
-          <div class="grid grid-cols-12 h-full">
-            <div class="col-span-4 lg:col-start-2">
+        <div class="relative w-screen h-full bg-black text-white">
+          <div class="grid grid-cols-12 w-full h-full">
+            <div class="col-span-4 lg:col-start-2 section-horizontal__el">
               <p class="font-secondary text-30 leading-40" v-html="data.sectionHorizontal['4'].description"/>
               <h2 class="mt-12 text-40 leading-50 uppercase" v-html="data.sectionHorizontal['4'].title"/>
             </div>
+          </div>
 
-            <div class="col-span-6">
+          <div class="relative lg:absolute top-0 right-0 w-1/2 h-full flex justify-center items-center">
+            <img class="absolute top-0 left-0 w-full h-full"
+                 ref="sliderBackground"
+                 v-if="sliderBackground"
+                 :src="sliderBackground"
+                 alt=""/>
 
+            <div class="w-full flex flex-col">
+              <div class="relative swiper z-10" ref="slider">
+                <div class="swiper-wrapper">
+                  <div class="bg-white text-black swiper-slide"
+                       v-for="(slide, index) in data.sectionHorizontal['4'].slides">
+                    <div class="aspect-h-1 aspect-w-1 bg-black">
+                      <img
+                        v-if="slide.logo"
+                        :src="slide.logo"
+                        alt=""/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="z-30 swiper-pagination" ref="sliderPagination"></div>
+              </div>
+
+              <div class="relative z-10 text-center slide-caption">
+                <h4 class="lg:text-38 lg:leading-64 font-bold uppercase" v-if="sliderTitle"
+                    v-text="sliderTitle"/>
+
+                <p class="font-secondary lg:text-20 uppercase" v-if="sliderSubtitle"
+                   v-text="sliderSubtitle"/>
+              </div>
             </div>
           </div>
         </div>
@@ -160,7 +190,7 @@
       </section>
     </main>
 
-   <Footer/>
+    <Footer/>
   </div>
 </template>
 
@@ -168,7 +198,11 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-const horizontalScrolling = () => import('assets/scripts/horizontal-scroll')
+import {gsap} from 'gsap'
+
+const
+  horizontalScrolling = () => import('assets/scripts/horizontal-scroll'),
+  slider = () => import('assets/scripts/slider.js')
 
 const getSiteData = () => import('~/static/data.json').then(m => m.default || m)
 
@@ -182,6 +216,10 @@ export default {
   },
   data() {
     return {
+      slider: null,
+      sliderBackground: null,
+      sliderTitle: null,
+      sliderSubtitle: null,
       name: null,
       email: null,
       acceptedPolicy1: false,
@@ -193,6 +231,34 @@ export default {
   methods: {},
   mounted() {
     horizontalScrolling().then(module => module.horizontalScrollSections())
+    slider().then(module => {
+      this.sliderBackground = this.data.sectionHorizontal[4].slides[0].background
+      this.sliderTitle = this.data.sectionHorizontal[4].slides[0].title
+      this.sliderSubtitle = this.data.sectionHorizontal[4].slides[0].description
+
+
+      this.slider = module.swiper(this.$refs.slider, {
+        el: this.$refs.sliderPagination,
+        clickable: true,
+        type: 'bullets',
+      }, () => {
+
+        gsap.to(this.$refs.sliderBackground, {
+          opacity: 0,
+          onComplete: () => {
+            this.sliderBackground = this.data.sectionHorizontal[4].slides[this.slider.activeIndex].background
+
+            this.sliderTitle = this.data.sectionHorizontal[4].slides[this.slider.activeIndex].title
+            this.sliderSubtitle = this.data.sectionHorizontal[4].slides[this.slider.activeIndex].description
+
+
+            gsap.to(this.$refs.sliderBackground, {
+              opacity: 1
+            })
+          }
+        })
+      })
+    })
   }
 }
 </script>
@@ -262,7 +328,7 @@ br {
   flex-direction: column;
   height: 100vh;
 
-  > div {
+  &__el {
     padding: 60px 0;
   }
 }
@@ -283,5 +349,15 @@ br {
 
 .find-more {
   padding: 75px 0;
+}
+
+.swiper {
+  width: 273px;
+}
+
+.slide-caption {
+  @screen lg {
+    margin-top: 110px;
+  }
 }
 </style>

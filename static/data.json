@@ -52,19 +52,27 @@
       "description": "This is why we have selected some design studios for this project",
       "slides": [
         {
-          "title": "lorem ipsum",
-          "description": "dolor sit amet"
+          "background": "/images/slides/slide-1-bg.jpg",
+          "logo": "/images/slides/slide-1-logo.png",
+          "title": "Furf",
+          "description": "Design studio"
         },
         {
-          "title": "lorem ipsum",
+          "background": "/images/slides/slide-1-bg.jpg",
+          "logo": "/images/slides/slide-1-logo.png",
+          "title": "Slide 2",
           "description": "design studio"
         },
         {
-          "title": "lorem ipsum",
+          "background": "/images/slides/slide-1-bg.jpg",
+          "logo": "/images/slides/slide-1-logo.png",
+          "title": "slide 3",
           "description": "design studio"
         },
         {
-          "title": "lorem ipsum",
+          "background": "/images/slides/slide-1-bg.jpg",
+          "logo": "/images/slides/slide-1-logo.png",
+          "title": "Slide 4",
           "description": "design studio"
         }
       ]
