@@ -1,7 +1,7 @@
 <template>
   <div class="text-black bg-white site-container">
     <Header/>
-    <main class="relative min-h-full home">
+    <main class="relative min-h-full home overflow-hidden">
       <section class="relative flex flex-col justify-end w-full h-screen overflow-hidden text-white hero">
         <img class="absolute top-0 left-0 w-full h-full object-cover object-center"
              v-if="data.hero.image"
@@ -73,37 +73,107 @@
         </div>
       </section>
 
-      <section class="section-line section-horizontal">
-        <div>
-          <h2 v-html="data.sectionHorizontal['1'].title"/>
+      <section class="section-line section-horizontal section-h-fixed">
+        <div class="flex items-center w-screen h-full text-center">
+          <div class="grid grid-cols-12 w-full">
+            <div class="col-span-10 col-start-2 lg:col-span-4 lg:col-start-5">
+              <h2 class="text-50 leading-64 font-bold uppercase"
+                  v-html="data.sectionHorizontal['1'].title"/>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-black text-white">
-          <p v-html="data.sectionHorizontal['2'].entry"/>
-          <h2 v-html="data.sectionHorizontal['2'].title"/>
+        <div class="w-screen h-full bg-black text-white">
+          <div class="grid grid-cols-12 w-full h-full">
+            <div class="col-span-12 lg:col-span-5 lg:col-start-2">
+              <p class="font-secondary" v-html="data.sectionHorizontal['2'].entry"/>
+              <h2 class="text-50 leading-64 font-bold uppercase" v-html="data.sectionHorizontal['2'].title"/>
+            </div>
+
+            <div class="flex items-end lg:col-span-3 lg:col-start-9">
+              <div class="flex flex-col partners text-right">
+                <img src="/images/logos/sucks.svg" alt="logo sucks"/>
+
+                <img src="/images/logos/designwanted.svg" alt="logo designwanted"/>
+
+                <img src="/images/logos/caracol.png" alt="logo caracol"/>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <h2 v-html="data.sectionHorizontal['3'].title"/>
-          <p v-html="data.sectionHorizontal['3'].description"/>
+        <div class="w-screen h-full">
+          <div class="grid grid-cols-12 w-full h-full">
+            <div class="col-span-12 lg:col-span-5 lg:col-start-2">
+              <h2 class="text-50 leading-64 font-bold uppercase outlined" v-html="data.sectionHorizontal['3'].title"/>
+            </div>
+
+            <div class="flex items-end lg:col-span-3 lg:col-start-9">
+              <div class="flex flex-col partners text-right">
+                <p class="font-secondary" v-html="data.sectionHorizontal['3'].description"/>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <h2 v-html="data.sectionHorizontal['4'].title"/>
-          <p v-html="data.sectionHorizontal['4'].description"/>
+        <div class="w-screen h-full bg-black text-white">
+          <div class="grid grid-cols-12 h-full">
+            <div class="col-span-4 lg:col-start-2">
+              <p class="font-secondary text-30 leading-40" v-html="data.sectionHorizontal['4'].description"/>
+              <h2 class="mt-12 text-40 leading-50 uppercase" v-html="data.sectionHorizontal['4'].title"/>
+            </div>
+
+            <div class="col-span-6">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-black text-white text-center find-more">
+        <h3 class="text-50 leading-64 font-bold uppercase">
+          <span v-text="data.event.more"/>
+          <span class="block" v-text="data.event.where"/>
+          <span class="block" v-text="data.event.when"/>
+        </h3>
+
+        <p class="mt-4 font-secondary">({{ data.event.address }})</p>
+      </section>
+
+      <section class="text-center">
+        <div class="grid grid-cols-12">
+          <div class="col-span-8 col-start-3">
+            <form class="flex flex-col py-8"
+                  @submit.prevent>
+              <h3 class="text-50 leading-64 font-bold uppercase"
+                  v-text="data.form.title"></h3>
+
+              <input class="mt-8 mb-4 border border-black font-secondary text-white rounded-full py-3 px-4 text-center"
+                     type="email"
+                     required
+                     :placeholder="data.form.emailPlaceholder"/>
+
+              <button class="font-secondary uppercase" type="submit" v-text="data.form.submitText"/>
+            </form>
+          </div>
         </div>
       </section>
     </main>
+
+   <Footer/>
   </div>
 </template>
 
 <script>
 import Header from "../components/Header"
+import Footer from "../components/Footer"
+
+const horizontalScrolling = () => import('assets/scripts/horizontal-scroll')
 
 const getSiteData = () => import('~/static/data.json').then(m => m.default || m)
 
 export default {
-  components: {Header},
+  components: {Header, Footer},
   async asyncData() {
     return await getSiteData().then(request => {
       const data = request
@@ -122,7 +192,7 @@ export default {
   },
   methods: {},
   mounted() {
-
+    horizontalScrolling().then(module => module.horizontalScrollSections())
   }
 }
 </script>
@@ -184,5 +254,34 @@ br {
   height: 247px;
   transform: translateX(50%);
   animation: rotateText 10s linear infinite;
+}
+
+.section-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+
+  > div {
+    padding: 60px 0;
+  }
+}
+
+.partners {
+  img {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+
+    &:last-child {
+      object-fit: contain;
+      object-position: right;
+      max-height: 25px;
+    }
+  }
+}
+
+.find-more {
+  padding: 75px 0;
 }
 </style>

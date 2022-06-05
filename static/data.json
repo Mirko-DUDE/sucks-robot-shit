@@ -2,7 +2,8 @@
   "event": {
     "address": "Via G. De Castillia 26, Milano",
     "when": "June 6-12//Stecca 3//",
-    "where": "Isola Design District"
+    "where": "Isola Design District",
+    "more": "Find out more in"
   },
   "hero": {
     "image": "/images/hero.jpg",
@@ -39,15 +40,15 @@
       "title": "Nobody knows it, but there is always more of it."
     },
     "2": {
-      "entry": "_sucks., in collaboration with Caracol and DesignWanted",
+      "entry": "_sucks., in collaboration<br>with Caracol and DesignWanted",
       "title": "want to take this Shit and turn it into something new"
     },
     "3": {
-      "title": "How about turning the <strong>Robot Shit</strong> into <strong>Design</strong>",
+      "title": "How about turning the <strong>Robot Shit</strong><br>into<br><strong>Design</strong>",
       "description": "Did you produce these scraps? Good. Let's find a way to reuse them, to make them useful."
     },
     "4": {
-      "title": "With designers able to help us turing Robot Shit into Design Shit.",
+      "title": "With designers able to help us turing <strong>Robot Shit</strong> into <strong>Design Shit</strong>.",
       "description": "This is why we have selected some design studios for this project",
       "slides": [
         {
@@ -68,5 +69,10 @@
         }
       ]
     }
+  },
+  "form": {
+    "title": "Stay tuned",
+    "emailPlaceholder": "email",
+    "submitText": "submit"
   }
 }
