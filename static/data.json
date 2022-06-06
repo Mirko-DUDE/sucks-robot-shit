@@ -48,8 +48,8 @@
       "description": "Did you produce these scraps? Good. Let's find a way to reuse them, to make them useful."
     },
     "4": {
-      "title": "With designers able to help us turing <strong>Robot Shit</strong> into <strong>Design Shit</strong>.",
-      "description": "This is why we have selected some design studios for this project",
+      "title": "With designers able to help us turing <strong>Robot Shit</strong> into <br><strong>Design Shit</strong>.",
+      "description": "This is why<br>we have selected<br> some design studios<br> for this project",
       "slides": [
         {
           "background": "/images/slides/slide-1-bg.jpg",
@@ -81,6 +81,13 @@
   "form": {
     "title": "Stay tuned",
     "emailPlaceholder": "email",
-    "submitText": "submit"
+    "submitText": "submit",
+    "inputPlaceholderText": "Leave your email",
+    "inputSubmitText": "Send",
+    "label1": "I've read and accept the terms of the <a class='underline' href='/download/DUDE-Informativa designsucks.pdf' target='_blank'>Privacy Policy</a> I give my consent to receive information via email about news/events/commercial acitivies of DUDE's group.",
+    "label2": "I give my consent to carry out communication / data transfer activities to DUDE's group partnes.",
+    "ctaFileUrl": "/download/Press_Kit.zip",
+    "ctaText": "the Press Kit",
+    "mailSent": "Thanks!"
   }
 }
