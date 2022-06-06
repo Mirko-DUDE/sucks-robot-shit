@@ -192,7 +192,7 @@
           </div>
         </div>
 
-        <div class="relative w-screen h-full bg-black text-white overflow-hidden">
+        <div class="relative w-screen h-full bg-black text-white overflow-hidden section-horizontal__el">
           <svg class="absolute hidden lg:block top-0 left-0 w-full h-full h-full" viewBox="0 0 1440 706" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_55_349" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="735"
@@ -206,15 +206,15 @@
             </g>
           </svg>
 
-          <div class="grid grid-cols-12 w-full lg:h-full px-30 text-right lg:text-left">
-            <div class="col-span-12 lg:col-span-4 lg:col-start-2 section-horizontal__el">
+          <div class="grid grid-cols-12 w-full h-1/2 lg:h-full px-30 text-right lg:text-left">
+            <div class="col-span-12 lg:col-span-4 lg:col-start-2">
               <p class="font-secondary text-22 lg:text-30 leading-30 lg:leading-40" v-html="data.sectionHorizontal['4'].description"/>
               <h2 class="mt-4 lg:mt-12 text-22 lg:text-40 leading-30 lg:leading-50 uppercase"
                   v-html="data.sectionHorizontal['4'].title"/>
             </div>
           </div>
 
-          <div class="relative absolute top-0 right-0 w-full lg:w-1/2 h-1/2 lg:h-full flex justify-center items-center">
+          <div class="relative lg:absolute top-0 right-0 w-full lg:w-1/2 h-1/2 lg:h-full flex justify-center items-center">
             <img class="absolute top-0 left-0 w-full h-full"
                  ref="sliderBackground"
                  v-if="sliderBackground"
