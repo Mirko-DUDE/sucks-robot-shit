@@ -19,7 +19,7 @@
         </div>
       </section>
 
-      <div class="relative overflow-hidden">
+      <div class="relative overflow-hidden section-line">
         <svg class="absolute hidden lg:block left-0 bottom-0" viewBox="0 0 1440 1483" fill="none"
              xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <mask id="mask0_55_336" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440"
@@ -33,7 +33,7 @@
           </g>
         </svg>
 
-        <section id="section-1" class="relative flex items-center section-line">
+        <section id="section-1" class="relative flex items-center">
           <div class="grid grid-cols-12 px-30">
             <div class="col-span-12 lg:col-span-5 lg:col-start-2 order-2 lg:order-1">
               <img :src="data.section1.image.url"/>
@@ -47,7 +47,7 @@
           </div>
         </section>
 
-        <section class="flex items-center section-line mt-28">
+        <section class="flex items-center mt-28">
           <div class="grid grid-cols-12 px-30">
             <div class="col-span-12 lg:col-span-5 lg:col-start-7 lg:text-right">
               <h2 class="text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase outlined">
@@ -104,8 +104,8 @@
         </div>
       </section>
 
-      <section class="section-line section-horizontal section-h-fixed">
-        <div class="relative flex items-center w-screen h-full text-center section-horizontal__el">
+      <section class="section-horizontal section-h-fixed">
+        <div class="relative flex items-center w-screen h-full text-center section-line section-horizontal__el">
           <svg
             preserveAspectRatio="none"
             class="absolute hidden lg:block top-0 left-0 w-full h-full" viewBox="0 0 1440 706" fill="none"
@@ -129,7 +129,7 @@
           </div>
         </div>
 
-        <div class="relative w-screen h-full bg-black text-white section-horizontal__el">
+        <div class="relative w-screen h-full bg-black text-white section-line section-horizontal__el">
           <svg
             preserveAspectRatio="none"
             class="absolute hidden lg:block top-0 left-0 w-full h-full" viewBox="0 0 1440 706" fill="none"
@@ -164,7 +164,7 @@
           </div>
         </div>
 
-        <div class="relative w-screen h-full section-horizontal__el">
+        <div class="relative w-screen h-full section-line section-horizontal__el">
           <svg class="absolute hidden lg:block top-0 left-0 w-full h-full" viewBox="0 0 1440 706" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_55_343" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440"
@@ -192,7 +192,7 @@
           </div>
         </div>
 
-        <div class="relative w-screen h-full bg-black text-white overflow-hidden section-horizontal__el">
+        <div class="relative w-screen h-full bg-black text-white overflow-hidden section-line section-horizontal__el">
           <svg class="absolute hidden lg:block top-0 left-0 w-full h-full h-full" viewBox="0 0 1440 706" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_55_349" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="735"
@@ -322,7 +322,8 @@ import {gsap} from 'gsap'
 
 const
   horizontalScrolling = () => import('assets/scripts/horizontal-scroll'),
-  slider = () => import('assets/scripts/slider.js')
+  slider = () => import('assets/scripts/slider.js'),
+  lineOnScroll = () => import('assets/scripts/line-on-scroll.js')
 
 const
   getSiteData = () => import('~/static/data.json').then(m => m.default || m),
@@ -338,7 +339,7 @@ export default {
     return await getSiteData().then(request => {
       const data = request
       return {data}
-    });
+    })
   },
   data() {
     return {
@@ -394,6 +395,7 @@ export default {
     }
   },
   mounted() {
+    /*lineOnScroll().then(module => module.lineOnScroll())*/
     horizontalScrolling().then(module => module.horizontalScrollSections())
     slider().then(module => {
       this.sliderBackground = this.data.sectionHorizontal[4].slides[0].background

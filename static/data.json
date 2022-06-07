@@ -89,5 +89,40 @@
     "ctaFileUrl": "/download/Press_Kit.zip",
     "ctaText": "the Press Kit",
     "mailSent": "Thanks!"
+  },
+  "project": {
+    "section1": {
+      "title": "<strong>Robot Shit Exhibit</strong>,<br> the very first exhibition<br> that promotes <strong>the reuse<br> of 3D printing waste.</strong>",
+      "image": "/images/project-1.jpg",
+      "description": "What is Robot Shit? Not everyone might be aware of the amount of discards robots produce through the process of 3D printings and it’s from this lack of awareness that DesignWanted, _sucks. and Caracol, in collaboration with Isola, have decided to realize “Robot Shit”, an exhibition where irony and provocation unite with the sense of responsibility.\nHumor is key, in a world where the term “sustainability” is almost on everybody’s mind, but on nobody’s true intentions. <br>Humor is key, in a world where the term “sustainability” is almost on everybody’s mind, but on nobody’s true intentions."
+    },
+    "section2": {
+      "title": "<strong>Reshape The Trend to Expose the Truth<strong><br> This is the mission of the Robot Shit PROJECT.",
+      "image": "/images/project-2.jpg",
+      "description": "Sustainability and environment are inflated themes during the Design Week that’s why _sucks. and DesignWanted want to talk about these themes in a different, self-deprecating and provocative way. Because when design generates waste and, above all, when brands try to disguise their products with green washing, even the most passionate in the sector can say what we all think: sometimes, design _sucks."
+    },
+    "section3": {
+      "title": "From <strong>Robot shit<br> to design shit.</strong>",
+      "image": "/images/project-2.jpg",
+      "description": "Robot Shit Project sees the involvement of various young, ambitious, attentive to the future designers. We want to launch with them a concrete message that does not remain unsolved, but that translates into a line of products designed to hack and improve other products."
+    },
+    "whoWheAre": {
+      "title": "Who we are",
+      "_sucks": {
+        "logo": "",
+        "description": "_sucks. is a lifestyle brand, a community of people who provoke brands, industries and personalities, to highlight their self-referentiality, contradiction and hypocrisy with self-irony. Founded in 2021, _sucks is a brand of DUDE Things, a company of the DUDE group that deals with creating brands and developing new products.",
+        "link": ""
+      },
+      "designWanted": {
+        "logo": "",
+        "description": "DesignWanted is a digital, international newspaper founded in Milan in 2015 by Patrick Abbattista. It deals with topics related to the world of product and industrial design, sharing industry trends, interviews and insights that directly concern the design community. Thanks to the social following, which has over 10 million contacts every month, it maintains a constant dialogue with the professionals of the sector, on a global scale, collecting ideas, insights and useful insights to evolve both the role of the magazine and the launch of new initiatives, as in the case of design_sucks.",
+        "link": ""
+      },
+      "caracol": {
+        "logo": "",
+        "description": "Caracol is an innovative company from Barlassina (MB), which was born from the idea of overcoming the limits of manufacturing and finding alternatives to produce in a more efficient and sustainable way. The company has developed an integrated and modular additive manufacturing system, which brings together various proprietary and patented elements - from the extruder to the printing bed, to the feeding system, up to the software and control system - with the support of a robotic arm for handling. The company today has the first robotic clusters for advanced production of its kind in Italy.",
+        "link": ""
+      }
+    }
   }
 }
