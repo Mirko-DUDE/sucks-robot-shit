@@ -2,7 +2,14 @@
   <div class="text-black bg-white site-container">
     <Header/>
 
-    <main class="relative min-h-full home overflow-hidden"></main>
+    <main class="relative min-h-full mt-8 project overflow-hidden">
+
+      <div class="grid grid-cols-12">
+        <div class="col-span-10 lg:col-start-2">
+          <h1></h1>
+        </div>
+      </div>
+    </main>
 
     <Footer/>
   </div>
@@ -24,8 +31,6 @@ export default {
     })
   },
   data() {
-    return {
-
-    }
+    return {}
   }
 }

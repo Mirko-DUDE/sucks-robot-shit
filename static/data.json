@@ -56,24 +56,6 @@
           "logo": "/images/slides/slide-1-logo.png",
           "title": "Furf",
           "description": "Design studio"
-        },
-        {
-          "background": "/images/slides/slide-1-bg.jpg",
-          "logo": "/images/slides/slide-1-logo.png",
-          "title": "Slide 2",
-          "description": "design studio"
-        },
-        {
-          "background": "/images/slides/slide-1-bg.jpg",
-          "logo": "/images/slides/slide-1-logo.png",
-          "title": "slide 3",
-          "description": "design studio"
-        },
-        {
-          "background": "/images/slides/slide-1-bg.jpg",
-          "logo": "/images/slides/slide-1-logo.png",
-          "title": "Slide 4",
-          "description": "design studio"
         }
       ]
     }
