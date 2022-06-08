@@ -7,6 +7,7 @@
   },
   "hero": {
     "image": "/images/hero.jpg",
+    "imageMobile": "/images/hero-mobile.jpg",
     "title": "Exhibit in"
   },
   "section1": {

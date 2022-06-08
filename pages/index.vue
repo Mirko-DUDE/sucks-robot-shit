@@ -3,9 +3,14 @@
     <Header/>
     <main class="relative min-h-full home overflow-hidden">
       <section class="relative flex flex-col justify-end w-full h-screen overflow-hidden text-white hero">
-        <img class="absolute top-0 left-0 w-full h-full object-cover object-center"
+        <img class="absolute hidden lg:block top-0 left-0 w-full h-full object-cover object-center"
              v-if="data.hero.image"
              :src="data.hero.image"
+             alt="Robot Shit"/>
+
+        <img class="absolute lg:hidden top-0 left-0 w-full h-full object-cover object-center"
+             v-if="data.hero.imageMobile"
+             :src="data.hero.imageMobile"
              alt="Robot Shit"/>
 
         <div class="relative flex flex-col justify-center items-center z-20">
