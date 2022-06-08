@@ -37,7 +37,8 @@
           <div class="grid grid-cols-12 px-30">
             <div class="col-span-12 lg:col-span-5 lg:col-start-2 order-2 lg:order-1">
               <img :src="data.section1.image.url"/>
-              <p class="mt-4 font-secondary" v-html="data.section1.image.description"/>
+
+              <p class="text-22 leading-30 lg:text-16 lg:leading-24 mt-8 lg:mt-4 font-secondary" v-html="data.section1.image.description"/>
             </div>
 
             <div class="col-span-12 lg:absolute top-0 mt-8 text-right overlay-text order-1 lg:order-2">
@@ -52,7 +53,7 @@
             <div class="col-span-12 lg:col-span-5 lg:col-start-7 lg:text-right">
               <h2 class="text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase outlined">
                 <span v-html="data.section2.title.el1"/>
-                <strong class="lg:text-80 lg:leading-85" v-html="data.section2.title.el2"/>
+                <strong class="text-40 leading-50 lg:text-80 lg:leading-85" v-html="data.section2.title.el2"/>
               </h2>
             </div>
 
