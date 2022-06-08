@@ -13,6 +13,7 @@ header {
   max-width: 272px;
 
   @screen lg {
+    width: 456px;
     max-width: none;
   }
 }
