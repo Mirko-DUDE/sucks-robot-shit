@@ -129,7 +129,7 @@
               <img class="absolute left-auto top-0 right-0 rotate-text" src="/images/text-fill.svg" alt=""/>
 
               <div class="relative inline-block h-full overflow-hidden">
-                <img class="absolute left-auto top-0 right-0 rotate-text z-10" src="/images/text-stroke.svg" alt=""/>
+                <img class="absolute block left-auto top-0 right-0 rotate-text z-10" src="/images/text-stroke.svg" alt=""/>
                 <img class="hidden lg:block" :src="data.section3.image.url" alt="">
 
                 <img class="lg:hidden" :src="data.section3.imageMobile.url" alt="">
