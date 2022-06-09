@@ -28,6 +28,9 @@
     "image": {
       "url": "/images/shape.jpg"
     },
+    "imageMobile": {
+      "url": "/images/shape-mobile.jpg"
+    },
     "title": {
       "el1": "This is",
       "el2": "The shape",

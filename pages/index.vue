@@ -20,7 +20,7 @@
             <span class="block" v-text="data.event.when"/>
           </h1>
 
-          <p class="mt-4 font-secondary">({{ data.event.address }})</p>
+          <p class="mt-2 lg:mt-4 font-secondary">({{ data.event.address }})</p>
         </div>
       </section>
 
@@ -38,11 +38,21 @@
           </g>
         </svg>
 
+        <!--        <svg class="absolute top-0 left-0 w-full" viewBox="0 0 1480 2846" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_28_134" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="0" width="1483" height="2847">
+                    <path d="M95.9398 1C599.641 25.1629 512.744 259.892 454.671 193.776C411.954 130.23 501.877 60.636 621.448 154.437C723.412 222.885 731.313 333.982 707.316 398.836C668.677 503.261 579.218 521.93 508.267 511.255C501.245 510.195 495.565 508.77 491.909 506.881C444.168 482.186 469.263 474.429 469.263 474.429C470.175 473.868 471.255 472.525 470.464 471.408C469.765 470.417 468.694 469.977 467.556 469.66C461.9 468.078 456.238 466.497 450.581 464.92C446.309 463.729 442.036 462.533 437.773 461.313C434.383 460.341 430.988 459.37 427.598 458.399C427.236 458.296 426.402 458.286 426.402 457.842C426.402 456.763 426.402 455.69 426.402 454.611C426.397 450.833 426.388 447.049 426.388 443.271C426.388 441.133 426.233 438.937 426.518 436.813C426.817 434.558 427.945 431.512 430.072 430.394C431.398 429.701 432.903 429.242 434.292 428.681C441.086 425.937 447.876 423.194 454.671 420.451L468.207 414.866C469.35 414.271 470.363 413.529 471.269 412.597C473.01 410.81 474.385 408.564 475.378 406.275C476.415 403.883 477.215 401.399 477.731 398.836C478.233 396.351 478.464 393.823 478.739 391.299C479.284 386.266 479.844 381.234 480.403 376.201C481.059 370.319 481.522 362.455 482.182 356.568L482.655 351.106C483.899 334.006 494.542 329.076 495.926 333.982C498.689 343.779 475.962 340.845 475.962 340.845L468.183 340.245C462.396 339.8 456.605 339.351 450.813 338.902C446.029 338.531 441.245 338.165 436.462 337.794C433.52 337.565 430.573 337.34 427.632 337.111C426.489 337.018 425.346 336.93 424.208 336.842C423.624 336.793 423.036 336.749 422.448 336.706C421.734 336.652 421.204 336.686 420.495 336.803C420.389 336.823 419.752 336.842 419.694 336.945C419.501 337.291 419.308 337.643 419.116 337.989C418.845 338.468 418.913 339.136 418.865 339.678C418.768 340.816 418.667 341.953 418.566 343.09C418.329 345.721 418.098 348.348 417.867 350.979C417.394 356.309 416.921 361.64 416.454 366.97C415.976 372.389 415.59 377.826 415.045 383.24C414.544 388.238 412.846 393.652 408.53 396.605C407.58 397.254 406.481 397.581 405.391 397.899C404.272 398.226 403.153 398.553 402.035 398.875C399.566 399.588 397.092 400.305 394.618 401.018C388.923 402.658 383.232 404.303 377.542 405.948C375.14 406.641 372.744 407.334 370.342 408.028C369.368 408.306 368.389 408.589 367.415 408.872C366.557 409.121 365.693 409.37 364.835 409.619C364.671 409.668 364.483 409.682 364.358 409.804C363.977 410.185 363.991 410.234 364.015 410.771C364.059 411.728 364.097 412.684 364.136 413.641C364.145 413.866 364.155 414.09 364.165 414.315C364.17 414.378 364.213 414.427 364.276 414.432C364.83 414.491 365.534 414.944 366.19 415.057C365.283 415.794 364.546 416.99 364.078 418.049C363.518 419.313 363.166 420.578 363.007 421.954C362.79 423.785 363.046 425.732 363.123 427.563C363.412 434.255 363.702 440.953 363.991 447.645C364.208 452.722 364.43 457.798 364.647 462.87C364.777 465.799 364.902 468.728 365.028 471.657C365.115 473.697 365.587 475.859 367.241 477.192C368.804 478.451 370.709 478.451 372.469 477.636C374.166 476.85 375.869 476.06 377.566 475.274C384.211 472.193 390.852 469.113 397.497 466.033C402.584 463.675 407.677 461.313 412.769 458.955C414.269 458.262 415.783 457.813 417.452 458.228C418.826 458.565 420.176 458.989 421.536 459.385C421.903 459.492 422.274 459.6 422.641 459.707C422.727 459.731 423.089 459.775 423.147 459.853C423.186 459.912 423.147 460.136 423.147 460.205C423.147 460.571 423.147 460.942 423.147 461.308C423.166 466.629 423.181 471.945 423.2 477.265C423.215 480.97 423.224 484.67 423.239 488.375C423.244 490.167 423.104 492.056 423.403 493.833C423.591 494.98 424.044 496.439 424.926 497.245C425.389 497.665 425.91 498.094 426.503 498.324C427.101 498.553 427.757 498.534 428.384 498.519C429.609 498.494 430.983 497.421 432.02 496.801C432.02 496.801 450.167 478.866 459.474 491.734C463.645 497.504 464.277 505.607 460.559 511.684C456.841 517.756 450.003 521.418 443.015 522.438C436.028 523.458 428.891 522.106 422.168 519.919C392.062 510.127 366.687 489.913 338.317 475.781C194.215 404 66.7319 488.375 66.7319 488.375C66.7319 488.375 -17.9804 541.124 22.0882 628.029C65.041 721.191 54.8127 508.64 10.5 630.787C-33.8127 752.934 73.6737 835.166 131.224 824.256C228.144 805.883 180.412 755.614 278.031 792.278C289.846 796.715 302.558 791.312 304.81 779.035C304.858 778.791 304.897 778.537 304.935 778.288C306.406 768.184 300.012 758.606 290.135 756.141C289.089 755.882 288.023 755.731 286.89 755.511C272.08 752.378 272.244 761.062 277.853 760.305C283.461 759.548 287.647 754.603 287.647 754.603C297.6 742.063 290.415 723.777 274.405 721.781C268.208 720.346 262.306 727.356 266.954 726.57C271.603 725.784 274.882 721.063 274.882 721.063C279.256 715.958 280.553 709.978 279.507 703.451C277.221 689.183 268.517 679.24 257.459 670.282C251.479 665.088 254.57 658.386 256.779 661.945C258.988 665.503 256.827 673.338 256.827 673.338C256.147 676.057 254.869 680.016 252.709 682.725C249.121 687.221 244.617 687.304 239.78 687.128C233.858 686.913 227.941 686.391 222.024 686.415C214.26 686.445 208.261 690.057 204.582 696.969C200.946 703.798 201.534 710.642 205.59 717.193C205.59 717.193 215.678 735.346 220.375 724.651C224.44 715.401 206.506 718.672 206.506 718.672C188.986 719.311 180.812 739.344 191.711 751.982C198.66 760.017 211.622 761.867 205.585 754.081C201.592 748.717 190.746 752.334 190.746 752.334C181.266 755.497 175.787 764.205 177.06 774.1C178.271 783.511 181.782 788.666 195.882 791.107C195.882 791.107 274.019 780.978 335.379 834.38C355.946 852.28 320.338 886.679 306.575 852.388C295.811 825.564 348.732 799.444 389.63 805.477C411.924 808.763 447.788 835.547 464.02 842.342C493.702 854.77 520.124 855.639 535.483 835.806C535.483 835.806 580.924 779.894 532.816 765.611C497.594 755.155 461.185 799.673 484.067 818.423C515.788 844.416 648.823 831.998 643.47 910.735C643.47 910.735 643.47 980.946 462.095 1025.08C462.095 1025.08 359.398 1054.06 246.632 1028.53C64.4143 987.268 45.2345 1084.81 64.2322 1159.43C94.7284 1258.93 192.723 1457.93 646.267 1609C1213.2 1797.84 246.762 1712.62 61.3394 1849C-33.8361 1919 -5.65222 1982.15 194.323 2073.93C259.315 2101.68 432.293 2093.83 488.287 2051.59C558.278 1998.8 436.293 1962.71 337.305 2073.93C211.871 2214.85 2.34674 2296.74 61.3394 2218.56C120.332 2140.39 82.4165 2471.03 224.319 2556.58C320.307 2614.45 434.293 2745.15 350.304 2745.15C220.32 2745.15 416.013 2503.75 646.267 2472.52C876.521 2441.29 882.238 2326.97 826.245 2283.76C725.257 2216.03 593.896 2268.32 860.24 2529.42C1160.11 2823.39 888.501 2887.41 826.245 2823.39C763.988 2759.36 863.077 2666.26 1116.05 2567.72C1089.65 2566.95 1070.21 2536.72 1085.05 2516.96C1099.88 2497.2 1137.71 2505.71 1136.71 2532.61C1135.71 2559.51 1116.05 2567.69 1116.05 2567.69C1135.1 2567.65 1151.2 2553.53 1151.2 2534.18V2530.62C1151.2 2511.24 1132.21 2499.93 1109.73 2496.25C1024.72 2482.33 1009.85 2449.22 1007.62 2416.91C1004.98 2378.82 1030.08 2338.02 1066.57 2328.76C1088.43 2323.22 1111.62 2320.37 1135.13 2320.37C1177.6 2320.37 1198.84 2330.09 1198.84 2349.96C1198.84 2368.56 1191.54 2385.48 1140.54 2385.48L1092.6 2385.79C1082.5 2385.85 1074.57 2394.59 1075.34 2404.81L1078.94 2452.85C1079.64 2462.06 1087.21 2469.19 1096.31 2469.19H1123.87C1132.85 2469.19 1140.36 2462.25 1141.2 2453.17C1142.01 2444.41 1149.06 2437.59 1157.71 2437.17L1160.11 2437.06C1241.73 2435.79 1290.02 2404.5 1290.02 2349.96C1290.02 2295.42 1234.65 2248.42 1135.13 2248.42C1112.72 2248.32 1058.47 2251.56 1020.72 2265.28C1008.23 2269.48 996.52 2275.81 986.27 2284.18C969.972 2297.48 937.231 2336.2 973.518 2341.97C1009.81 2347.74 1099.12 2195.47 1182.04 2194.46C1264.95 2193.44 1245.19 2145.35 1262.19 2100.21C1316.09 1957.1 1471 2004.89 1480 1924.68" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </mask>
+                  <g mask="url(#mask0_28_134)">
+                    <rect width="390" height="1259" transform="matrix(-1 0 0 1 539 -149)" fill="black"/>
+                  </g>
+                </svg>-->
+
+
         <div class="relative grid grid-cols-12 px-30 z-10">
           <div class="col-span-12 lg:col-span-5 lg:col-start-2 order-2 lg:order-1">
             <img :src="data.section1.image.url"/>
 
-            <p class="text-22 leading-30 lg:text-16 lg:leading-24 mt-8 lg:mt-4 font-secondary"
+            <p class="text-22 leading-30 lg:text-16 lg:leading-24 mt-55 lg:mt-4 font-secondary"
                v-html="data.section1.image.description"/>
           </div>
 
@@ -68,21 +78,22 @@
         </svg>
 
 
-        <div class="relative grid grid-cols-12 px-30 z-10">
-          <div class="col-span-12 lg:col-span-5 lg:col-start-7 lg:text-right">
+        <div class="relative grid grid-cols-12 mt-55 lg:mt-0 px-30 z-10">
+          <div class="col-span-12 lg:col-span-5 lg:col-start-7 text-right">
             <h2 class="text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase outlined">
               <span v-html="data.section2.title.el1"/>
               <strong class="text-40 leading-50 lg:text-80 lg:leading-85" v-html="data.section2.title.el2"/>
             </h2>
           </div>
 
-          <div class="col-span-12 lg:col-span-5 lg:col-start-2 py-28">
+          <div class="col-span-12 lg:col-span-5 lg:col-start-2 mt-55 mb-28 lg:py-28">
             <p class="font-secondary" v-html="data.section2.description"/>
           </div>
         </div>
       </section>
 
-      <section class="relative flex items-center bg-black text-white section-line section-h-fixed">
+      <section
+        class="relative flex items-center min-h-screen lg:min-h-0 bg-black text-white section-line section-h-fixed">
         <svg class="absolute hidden lg:block top-0 left-0 w-full h-full" viewBox="0 0 1440 706" fill="none"
              xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <mask id="mask0_55_337" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440"
@@ -99,15 +110,16 @@
 
         <div class="grid grid-cols-12 w-full px-30">
           <div
-            class="flex flex-col justify-between col-span-12 lg:col-span-5 lg:col-start-2 order-2 lg:order-1 text-center lg:text-left">
-            <h2 class="flex flex-col text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase">
+            class="flex flex-col justify-between col-span-12 lg:col-span-5 lg:col-start-2 order-2 lg:order-1">
+            <h2
+              class="relative lg:flex lg:flex-col text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase z-10 rotate-image-title">
               <span v-html="data.section3.title.el1"/>
               <span v-html="data.section3.title.el2"/>
               <span v-html="data.section3.title.el3"/>
               <span v-html="data.section3.title.el4"/>
             </h2>
 
-            <p class="font-secondary" v-html="data.section3.description"/>
+            <p class="mt-55 lg:mt-0 text-right lg:text-left font-secondary" v-html="data.section3.description"/>
           </div>
 
           <div class="col-span-8 col-start-3 lg:col-span-4 order-1 lg:order-2">
@@ -116,7 +128,9 @@
 
               <div class="relative inline-block h-full overflow-hidden">
                 <img class="absolute left-auto top-0 right-0 rotate-text z-10" src="/images/text-stroke.svg" alt=""/>
-                <img :src="data.section3.image.url" alt="">
+                <img class="hidden lg:block" :src="data.section3.image.url" alt="">
+
+                <img class="lg:hidden" :src="data.section3.imageMobile.url" alt="">
               </div>
             </div>
           </div>
@@ -143,7 +157,7 @@
 
           <div class="grid grid-cols-12 w-full">
             <div class="col-span-10 col-start-2 lg:col-span-4 lg:col-start-5">
-              <h2 class="text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase"
+              <h2 class="text-40 lg:text-50 leading-50 lg:leading-64 font-bold uppercase"
                   v-html="data.sectionHorizontal['1'].title"/>
             </div>
           </div>
@@ -167,7 +181,7 @@
 
           <div class="grid grid-cols-12 w-full h-full px-30">
             <div class="col-span-12 lg:col-span-5 lg:col-start-2">
-              <p class="font-secondary" v-html="data.sectionHorizontal['2'].entry"/>
+              <p class="text-22 leading-30 font-secondary" v-html="data.sectionHorizontal['2'].entry"/>
               <h2 class="text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase"
                   v-html="data.sectionHorizontal['2'].title"/>
             </div>
@@ -206,13 +220,14 @@
 
             <div class="flex items-end col-span-12 lg:col-span-3 lg:col-start-9">
               <div class="flex flex-col partners text-right">
-                <p class="font-secondary" v-html="data.sectionHorizontal['3'].description"/>
+                <p class="text-22 leading-30 font-secondary" v-html="data.sectionHorizontal['3'].description"/>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="relative w-screen h-full bg-black text-white overflow-hidden section-line section-horizontal__el">
+        <div
+          class="relative w-screen h-full bg-black text-white overflow-hidden section-line section-horizontal__el no-pb-mobile">
           <svg class="absolute hidden lg:block top-0 left-0 w-full h-full h-full" viewBox="0 0 1440 706" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_55_349" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="735"
@@ -273,7 +288,7 @@
       </section>
 
       <section class="bg-black text-white text-center find-more">
-        <h3 class="text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase">
+        <h3 class="px-30 text-24 lg:text-50 leading-35 lg:leading-64 font-bold uppercase">
           <span v-text="data.event.more"/>
           <span class="block" v-text="data.event.where"/>
           <span class="block" v-text="data.event.when"/>
@@ -291,13 +306,15 @@
                   v-text="data.form.title"></h3>
 
               <div class="flex justify-center items-center mt-4">
-                <div class="flex flex-col w-full items-center font-secondary text-14 border border-white rounded-full lg:mb-8 send-form"
-                     v-if="!mailSent">
-                  <input class="flex-none w-full h-full bg-transparent outline-none border border-black px-4 py-3 rounded-full"
-                         type="email"
-                         required
-                         v-model="email"
-                         :placeholder="`* ${data.form.inputPlaceholderText}`"/>
+                <div
+                  class="flex flex-col w-full items-center font-secondary text-14 border border-white rounded-full lg:mb-8 send-form"
+                  v-if="!mailSent">
+                  <input
+                    class="flex-none w-full h-full bg-transparent outline-none border border-black px-4 py-3 rounded-full"
+                    type="email"
+                    required
+                    v-model="email"
+                    :placeholder="`* ${data.form.inputPlaceholderText}`"/>
 
                   <input
                     class="flex-none h-full mt-4 bg-transparent text-22 uppercase border-l border-white cursor-pointer"
@@ -477,8 +494,6 @@ br {
 }
 
 .section-h-fixed {
-  height: 100vh;
-
   @screen lg {
     height: 706px;
   }
@@ -495,7 +510,7 @@ br {
   padding-top: 50px;
 
   img {
-    margin-top: -25px;
+    margin-top: -50px;
 
     @screen lg {
       margin-top: 80px
@@ -603,9 +618,9 @@ label > span {
 }
 
 .send-form {
- input[type="email"] {
-   height: 50px;
- }
+  input[type="email"] {
+    height: 50px;
+  }
 }
 
 .sent-message {
@@ -618,6 +633,28 @@ label > span {
 .image-rotate-text {
   img {
     max-height: 606px;
+  }
+}
+
+.rotate-text {
+  margin-top: -80px;
+
+  @screen lg {
+    margin-top: 0;
+  }
+}
+
+.rotate-image-title {
+  margin-top: -50px;
+
+  @screen lg {
+    margin-top: 0;
+  }
+}
+
+.no-pb-mobile {
+  @media (max-width: 768px) {
+    padding-bottom: 0;
   }
 }
 </style>
