@@ -19,8 +19,8 @@
           <NuxtLink to="/">Home</NuxtLink>
         </li>
 
-        <li>
-          <NuxtLink class="pointer-events-none" to="/discover-more">Discover more</NuxtLink>
+        <li class="hidden">
+          <NuxtLink to="/discover-more">Discover more</NuxtLink>
         </li>
       </ul>
     </div>
