@@ -126,7 +126,7 @@
 
           <div class="col-span-8 col-start-3 lg:col-span-4 order-1 lg:order-2">
             <div class="relative h-full text-right image-rotate-text">
-              <img class="absolute left-0 lg:left-auto top-0 right-0 rotate-text" src="/images/text-fill.svg" alt=""/>
+              <img class="absolute left-0 lg:left-auto top-0 lg:right-0 rotate-text" src="/images/text-fill.svg" alt=""/>
 
               <div class="relative">
                 <img class="absolute block top-0 lg:right-0 rotate-text z-10" src="/images/text-stroke.svg" alt=""/>
