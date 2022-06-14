@@ -12,14 +12,14 @@
     </button>
 
     <div
-      class="absolute invisible opacity-0 flex justify-center items-center top-0 left-0 bg-black text-white text-24 leading-25 uppercase w-screen h-screen z-10"
+      class="absolute invisible opacity-0 flex justify-center items-center top-0 left-0 bg-black font-bold text-white text-24 uppercase leading-25 uppercase w-screen h-screen z-10"
       ref="menu">
       <ul class="text-center">
         <li>
           <NuxtLink to="/">Home</NuxtLink>
         </li>
 
-        <li class="hidden">
+        <li>
           <NuxtLink to="/discover-more">Discover more</NuxtLink>
         </li>
       </ul>
