@@ -1,7 +1,5 @@
 <template>
   <div class="h-full bg-black text-white site-container">
-    <Header/>
-
     <main class="relative min-h-full mt-8 project overflow-hidden">
       <section>
         <div class="grid grid-cols-12">
@@ -89,19 +87,13 @@
         </div>
       </section>
     </main>
-
-    <Footer/>
   </div>
 </template>
 
 <script>
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-
 const getSiteData = () => import('~/static/data.json').then(m => m.default || m)
 
 export default {
-  components: {Header, Footer},
   async asyncData() {
     return await getSiteData().then(request => {
       const data = request

@@ -1,6 +1,5 @@
 <template>
   <div class="text-black bg-white site-container">
-    <Header/>
     <main class="relative min-h-full home overflow-hidden">
       <section class="relative flex flex-col justify-end w-full h-screen overflow-hidden text-white hero">
         <img class="absolute hidden lg:block top-0 left-0 w-full h-full object-cover object-center"
@@ -37,8 +36,6 @@
               stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
           </g>
         </svg>
-
-        <svg class="absolute hidden lg:block top-0 left-0 w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 378 203"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><path class="cls-1" d="M1.2,3.1C400.2,49.8,320.9,250.1,266.7,188.4c-35.5-52.8,20.5-109.7,109-73.8"/></svg>
 
         <img id="mobile-line-1" class="absolute top-0 left-0 w-full lg:hidden max-w-none"
              src="/images/mobile-lines/1.svg" alt="">
@@ -377,8 +374,6 @@
         </div>
       </section>
     </main>
-
-    <Footer/>
   </div>
 </template>
 
