@@ -202,11 +202,11 @@
 
             <div class="flex items-end col-span-12 lg:col-span-3 lg:col-start-9">
               <div class="flex flex-col partners text-right">
-                <img src="/images/logos/sucks.svg" alt="logo sucks"/>
+                <img v-lazy-load data-src="/images/logos/sucks.svg" alt="logo sucks"/>
 
-                <img src="/images/logos/designwanted.svg" alt="logo designwanted"/>
+                <img v-lazy-load data-src="/images/logos/designwanted.svg" alt="logo designwanted"/>
 
-                <img src="/images/logos/caracol.png" alt="logo caracol"/>
+                <img v-lazy-load data-src="/images/logos/caracol.png" alt="logo caracol"/>
               </div>
             </div>
           </div>
